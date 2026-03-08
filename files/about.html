@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Sheila Gacheri</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+
+        .about-image {
+            position: relative;
+            height: 500px;
+            background: linear-gradient(135deg, var(--accent), var(--secondary));
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 8rem;
+            overflow: hidden;
+            box-shadow: 0 30px 60px rgba(6, 182, 212, 0.3);
+        }
+
+        .about-image::before {
+            content: '';
+            position: absolute;
+            inset: 10px;
+            background: var(--primary);
+            border-radius: 20px;
+            opacity: 0.1;
+        }
+
+        .about-content h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent);
+        }
+
+        .about-content p {
+            font-size: 1.125rem;
+            color: #94a3b8;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .highlight {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .education-card {
+            background: var(--surface);
+            border: 1px solid var(--glass);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-top: 2rem;
+            border-left: 4px solid var(--accent);
+        }
+
+        .education-card h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            margin-bottom: 0.5rem;
+            color: var(--text);
+        }
+
+        .education-card .year {
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .value-card {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .value-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .value-card h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            margin-bottom: 0.5rem;
+            color: var(--accent);
+        }
+
+        .journey-timeline {
+            margin-top: 4rem;
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .journey-timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--accent), var(--secondary));
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 3rem;
+            padding-left: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.4rem;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            background: var(--accent);
+            border-radius: 50%;
+            border: 3px solid var(--primary);
+        }
+
+        .timeline-item h4 {
+            color: var(--accent);
+            font-family: 'Space Grotesk', sans-serif;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 968px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-image {
+                height: 300px;
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-animation">
+        <div class="particles" id="particles"></div>
+    </div>
+
+    <nav>
+        <a href="index.html" class="logo">SG.</a>
+        <div class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="section page-content">
+        <div class="section-header">
+            <h1 class="section-title">About Me</h1>
+            <p class="section-subtitle">Get to know the person behind the code</p>
+        </div>
+
+        <div class="about-container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="image/sheila.jpeg">
+                </div>
+                <div class="about-content">
+                    <h2>Hello! I'm Sheila</h2>
+                    <p>
+                        I'm a <span class="highlight">Software Engineering student at Kirinyaga University</span> 
+                        with a burning passion for creating digital experiences that make a difference. My journey 
+                        into tech started with curiosity and has evolved into a deep love for both the logic of 
+                        coding and the creativity of design.
+                    </p>
+                    <p>
+                        What drives me? The perfect marriage of <span class="highlight">functionality and aesthetics</span>. 
+                        I believe that great software isn't just about working code—it's about creating intuitive 
+                        experiences that users genuinely enjoy.
+                    </p>
+                    <p>
+                        As a <span class="highlight">team player</span>, I thrive in collaborative environments. 
+                        I believe the best solutions emerge when diverse minds work together, sharing ideas and 
+                        learning from each other.
+                    </p>
+
+                    <div class="education-card">
+                        <h3>🎓 BSc. Software Engineering</h3>
+                        <div class="year">Kirinyaga University | 2026 - Present</div>
+                        <p>Currently pursuing my degree with focus on web technologies, software design patterns, and user experience.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="values-grid">
+                <div class="card value-card">
+                    <div class="value-icon">🎯</div>
+                    <h3>Goal-Oriented</h3>
+                    <p>I set clear objectives and work persistently to achieve them, always keeping the end-user in mind.</p>
+                </div>
+                <div class="card value-card">
+                    <div class="value-icon">🤝</div>
+                    <h3>Collaborative</h3>
+                    <p>I believe in the power of teamwork. Great things happen when we combine our strengths.</p>
+                </div>
+                <div class="card value-card">
+                    <div class="value-icon">📚</div>
+                    <h3>Always Learning</h3>
+                    <p>Technology evolves rapidly, and so do I. I'm constantly exploring new tools and techniques.</p>
+                </div>
+                <div class="card value-card">
+                    <div class="value-icon">💡</div>
+                    <h3>Innovative</h3>
+                    <p>I love finding creative solutions to complex problems. Thinking outside the box is my default mode.</p>
+                </div>
+            </div>
+
+            <div class="journey-timeline">
+                <h2 style="font-family: 'Space Grotesk', sans-serif; margin-bottom: 2rem; color: var(--accent);">My Journey</h2>
+                
+                <div class="timeline-item">
+                    <h4>2022 - Started University</h4>
+                    <p>Began my Software Engineering journey at Kirinyaga University, diving into programming fundamentals.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h4>2023 - First Projects</h4>
+                    <p>Built my first web applications and discovered my passion for UI/UX design.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h4>2024 - Team Collaborations</h4>
+                    <p>Started working on group projects, honing my collaboration and version control skills.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h4>2025 - Ready for More</h4>
+                    <p>Actively seeking internships and real-world projects to apply my skills professionally.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="#" class="social-link" title="GitHub">GH</a>
+            
+            
+        </div>
+        <p>&copy; 2026 Sheila Gacheri. Crafted with passion.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
